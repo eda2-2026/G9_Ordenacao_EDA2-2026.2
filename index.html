@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio da Esteira - Bubble Sort</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- inicio -->
+    <div id="modal-instrucoes" class="modal">
+        <div class="modal-content">
+            <h1>🌸 Desafio da Esteira: Bubble Sort 🌸</h1>
+            <p>Bem-vindo(a)! O objetivo deste jogo é ordenar as caixas em ordem crescente utilizando <strong>apenas trocas entre elementos vizinhos</strong>.</p>
+            
+            <div class="explicacao-box">
+                <h3>Como funciona o Bubble Sort?</h3>
+                <p>O algoritmo compara elementos lado a lado. Se o da esquerda for maior que o da direita, eles trocam de lugar. Repetimos o processo até que a lista inteira esteja perfeitamente ordenada!</p>
+            </div>
+
+            <p><strong>Regras do Jogo:</strong></p>
+            <ul>
+                <li>Clique em duas caixas vizinhas para trocá-las de posição.</li>
+                <li>Tente terminar a fase com o <strong>menor número de trocas possível</strong>.</li>
+                <li>Avance pelas 5 fases com dificuldades progressivas!</li>
+            </ul>
+
+            <button id="btn-iniciar" class="btn-rosa">Começar o Jogo!</button>
+        </div>
+    </div>
+
+    <!-- principal -->
+    <div class="container">
+        <header>
+            <div class="status-info">
+                <span id="fase-texto">Fase: 1 / 5</span>
+                <span id="trocas-texto">Trocas: 0</span>
+                <span id="ideal-texto">Mínimo Ideal: 0</span>
+            </div>
+            <button id="btn-reiniciar" class="btn-secundario">Reiniciar Fase</button>
+        </header>
+
+        <main>
+            <div class="esteira-container">
+                <h2>📦 Esteira de Caixas (Sua vez)</h2>
+                <div id="esteira" class="esteira"></div>
+                <div id="container-proxima-principal" class="hidden" style="margin-top: 15px;">
+                    <button id="btn-proxima-principal" class="btn-rosa">⏩ Ir para Próxima Fase</button>
+                </div>
+            </div>
+
+            <div class="robo-container">
+                <h2>🤖 Demonstração Automática do Bubble Sort</h2>
+                <p class="robo-sub">Veja como o algoritmo resolve esta exata fase passo a passo:</p>
+                <div id="esteira-robo" class="esteira"></div>
+                <div class="robo-controles">
+                    <button id="btn-rodar-robo" class="btn-secundario">▶ Executar Algoritmo</button>
+                </div>
+            </div>
+        </main>
+
+        <section class="log-section">
+            <h3>📋 Log de Ações e Histórico</h3>
+            <div id="log-container" class="log-box">
+                <p class="log-placeholder">As ações do jogo aparecerão aqui...</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- resultados-->
+    <div id="modal-vitoria" class="modal hidden">
+        <div class="modal-content">
+            <button id="btn-fechar-modal" class="btn-fechar">✖</button>
+            <h2>✨ Fase Concluída! ✨</h2>
+            <div id="estatisticas-fim" class="stats-box">
+            </div>
+            <button id="btn-proxima" class="btn-rosa">⏩ Próxima Fase</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
