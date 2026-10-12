@@ -45,4 +45,4 @@ O projeto conta com uma interface limpa, intuitiva e estilizada com uma paleta d
 
 ## Video
 
-* [Acesse o link da apresentação aqui]()
+* [Acesse o link da apresentação aqui](https://youtu.be/DjaVnmTvG-0)
