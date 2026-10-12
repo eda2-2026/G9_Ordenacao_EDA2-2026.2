@@ -165,3 +165,128 @@ header {
     cursor: pointer;
     transition: all 0.2s;
 }
+
+.btn-secundario:hover {
+    background-color: var(--bg-color);
+}
+
+.log-section {
+    background: #faf2f5;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #f3d6e2;
+}
+
+.log-section h3 {
+    font-size: 0.9rem;
+    color: var(--dark-pink);
+    margin-bottom: 6px;
+}
+
+.log-box {
+    max-height: 100px;
+    overflow-y: auto;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.log-placeholder {
+    color: #b08d95;
+    font-style: italic;
+}
+
+.log-entry {
+    background: var(--white);
+    padding: 4px 8px;
+    border-radius: 6px;
+    border-left: 3px solid var(--primary-pink);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(74, 46, 53, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: var(--white);
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 450px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+.modal-content h1, .modal-content h2 {
+    color: var(--dark-pink);
+    margin-bottom: 12px;
+}
+
+.btn-fechar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    font-size: 1.1rem;
+    color: var(--dark-pink);
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.btn-fechar:hover {
+    transform: scale(1.2);
+}
+
+.explicacao-box {
+    background: var(--bg-color);
+    padding: 12px;
+    border-radius: 10px;
+    margin: 12px 0;
+    text-align: left;
+    font-size: 0.85rem;
+}
+
+.modal-content ul {
+    text-align: left;
+    margin: 10px 0 15px 20px;
+    font-size: 0.85rem;
+}
+
+.modal-content li {
+    margin-bottom: 4px;
+}
+
+.stats-box {
+    background: var(--bg-color);
+    padding: 15px;
+    border-radius: 12px;
+    margin: 15px 0;
+    font-size: 0.95rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.stats-box p {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
