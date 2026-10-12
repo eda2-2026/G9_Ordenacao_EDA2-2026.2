@@ -33,7 +33,7 @@ O projeto conta com uma interface limpa, intuitiva e estilizada com uma paleta d
 ---
 
 ## Acesso Online
-* [Acesse o projeto aqui]() 
+* [Acesse o projeto aqui](https://eda2-2026.github.io/G9_Ordenacao_EDA2-2026.2/) 
 
 ## Screenshots
 <img width="795" height="689" alt="Captura de tela de 2026-10-10 18-54-21" src="https://github.com/user-attachments/assets/3a65c85a-2227-49e2-83c1-15460c497925" />
