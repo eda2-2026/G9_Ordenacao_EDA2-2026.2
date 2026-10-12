@@ -32,7 +32,7 @@ O projeto conta com uma interface limpa, intuitiva e estilizada com uma paleta d
 
 ---
 
-## 🚀 Acesso Online
+## Acesso Online
 * [Acesse o projeto aqui]() 
 
 ## Screenshots
